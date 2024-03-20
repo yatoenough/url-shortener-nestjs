@@ -9,8 +9,10 @@ import {
 } from '@nestjs/common';
 import { UrlsService } from './urls.service';
 import { CreateUrlsDto } from './dto/create-urls.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller()
+@ApiTags('Urls')
 export class UrlsController {
   constructor(private readonly urlsService: UrlsService) {}
 
