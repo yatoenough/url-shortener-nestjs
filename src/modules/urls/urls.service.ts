@@ -16,7 +16,7 @@ export class UrlsService {
     urlPair.originalUrl = url.url;
     urlPair.shortUrl = randomChars;
     await this.repo.save(urlPair);
-    return { shortUrl: `${process.env.API_HOST}/${urlPair.shortUrl}` };
+    return { url: `${process.env.API_HOST}/${urlPair.shortUrl}` };
   }
 
   async redirect(shortUrl: string) {

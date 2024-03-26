@@ -16,7 +16,7 @@ import { ApiTags } from '@nestjs/swagger';
 export class UrlsController {
   constructor(private readonly urlsService: UrlsService) {}
 
-  @Post('/generateUrl')
+  @Post('/shorten')
   async create(@Body() createUrlDto: CreateUrlsDto) {
     return await this.urlsService.shortUrl(createUrlDto);
   }
