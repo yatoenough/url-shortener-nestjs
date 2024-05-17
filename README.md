@@ -21,7 +21,7 @@ This project implements a URL shortener API built with TypeScript and NestJS. It
 $ npm run start
 ```
 
-<h1>API Endpoint: (/docs to open Swagger API)</h1>
+<h1>API Endpoint: (/docs to open Swagger UI)</h1>
 
 - <b>Shorten a URL:</b>
 
