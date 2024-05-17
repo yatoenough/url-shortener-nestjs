@@ -1,4 +1,10 @@
 <h1 align="center">URL Shortener API</h1>
+
+<div align="center">
+  
+  ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY290c2NvcGU2cGNuM2hsYmZnb2M2OWJuOGJnZjRjazQxMmVpenhwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qyIf0prdUCyla2WbEv/giphy.gif)
+</div>
+
 This project implements a URL shortener API built with TypeScript and NestJS. It allows users to shorten long URLs and retrieve the original URL from the shortened version.
 
 <h2>Features</h2>
