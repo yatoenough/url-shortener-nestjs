@@ -10,11 +10,20 @@ export class UrlsService {
   constructor(@InjectRepository(Url) private readonly repo: Repository<Url>) {}
 
   async shortUrl(url: CreateUrlsDto) {
+    const existingUrl = await this.repo.findOne({
+      where: { originalUrl: url.url },
+    });
+
+    if (existingUrl) {
+      return { url: `${process.env.API_HOST}/${existingUrl.shortUrl}` };
+    }
+
     const randomChars = generateRandomString(6);
     const urlPair = this.repo.create();
 
     urlPair.originalUrl = url.url;
     urlPair.shortUrl = randomChars;
+
     await this.repo.save(urlPair);
     return { url: `${process.env.API_HOST}/${urlPair.shortUrl}` };
   }

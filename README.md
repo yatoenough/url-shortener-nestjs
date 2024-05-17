@@ -47,7 +47,6 @@ Create `.env` file in project root folder and see the `.example.env` file.
 <h2>Technologies Used</h2>
 
 - Typescript 5.1.3
-- Spring Boot
 - TypeORM
 - SQLite
 - Swagger
